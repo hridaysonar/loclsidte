@@ -1,5 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+import AdminLogin from './AdminLogin';
 
 const AddCoffee = () => {
     const handleAddCoffee = (e) => {
@@ -42,6 +43,13 @@ Swal.fire({
             
         });
     };
+
+    const isAdmin = localStorage.getItem("isAdmin")
+    console.log(isAdmin);
+
+    if(!isAdmin){
+        return <AdminLogin></AdminLogin>
+    }
 
     return (
         <div className="bg-[#f5ebe0] min-h-screen flex flex-col items-center py-10">
