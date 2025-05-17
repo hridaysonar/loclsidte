@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const AdminRoute = ({children}) => {
     
     useEffect(() => {
-        fetch('http://localhost:3000/admin_login', {
+        fetch('https://coffe-house-server-beige.vercel.app/admin_login', {
             method: "POST",
             headers: {
                 'Content-Type': "applications/json"

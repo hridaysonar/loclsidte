@@ -12,7 +12,7 @@ const AdminLogin = () => {
             username, password
         }
 
-        fetch('http://localhost:3000/admin_login', {
+        fetch('https://coffe-house-server-beige.vercel.app/admin_login', {
                 method: "POST",
                 headers: {
                     'Content-Type': "Application/json"

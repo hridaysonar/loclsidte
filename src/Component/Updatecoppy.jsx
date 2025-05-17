@@ -21,7 +21,7 @@ const Updatecoppy = () => {
     const updateCoffeeData = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch(`http://localhost:3000/coffees/${_id}`, {
+      const response = await fetch(`https://coffe-house-server-beige.vercel.app/coffees/${_id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

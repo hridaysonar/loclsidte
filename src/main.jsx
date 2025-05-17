@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch('http://localhost:3000/coffees'),
+        loader: () => fetch('https://coffe-house-server-beige.vercel.app/coffees'),
         element: <Home />,
       },
       {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path:'updatecoffee/:id',
-        loader:({params})=> fetch(`http://localhost:3000/coffees/${params.id}`),
+        loader:({params})=> fetch(`https://coffe-house-server-beige.vercel.app/coffees/${params.id}`),
         element:<Updatecoppy/>
       },
       {
